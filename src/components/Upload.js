@@ -7,7 +7,7 @@ class Upload extends Component {
   uploadWidget = () => {
     window.cloudinary.openUploadWidget(
       { cloud_name: 'tomanistor',
-        upload_preset: 'yhyvdai5',
+        upload_preset: 'f2ogsyex',
         tags: ['miniflix'],
         sources: ['local', 'url', 'google_photos', 'facebook', 'image_search']
       },
@@ -25,7 +25,7 @@ class Upload extends Component {
 
         <div className="col-sm-12">
           <div className="jumbotron text-center">
-            <button onClick={this.uploadWidget} className="btn btn-lg btn-info"> Upload Video</button>
+            <button onClick={this.uploadWidget} className="btn btn-lg btn-info">Upload Video</button>
           </div>
         </div>
       </div>
