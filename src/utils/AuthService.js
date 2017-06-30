@@ -4,11 +4,11 @@ import auth0 from 'auth0-js';
 const ID_TOKEN_KEY = 'id_token';
 const ACCESS_TOKEN_KEY = 'access_token';
 
-const CLIENT_ID = 'EeobY3jxsMoFREmqfmsZwAALQb73WeWm';
-const CLIENT_DOMAIN = 'unicoder.auth0.com';
+const CLIENT_ID = 'W6mDLpp58aDBCRx0npxIljF92wdnbDA5';
+const CLIENT_DOMAIN = 'tomanistor.auth0.com';
 const REDIRECT = 'http://localhost:3000/callback';
 const SCOPE = 'full:access';
-const AUDIENCE = 'http://miniflix.com';
+const AUDIENCE = 'https://tomanistor.auth0.com/userinfo';
 
 var auth = new auth0.WebAuth({
   clientID: CLIENT_ID,

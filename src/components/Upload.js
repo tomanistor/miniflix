@@ -7,7 +7,7 @@ class Upload extends Component {
   uploadWidget = () => {
     window.cloudinary.openUploadWidget(
       { cloud_name: 'tomanistor',
-        upload_preset: 'f2ogsyex',
+        upload_preset: 'unsigned-video',
         tags: ['miniflix'],
         sources: ['local', 'url', 'google_photos', 'facebook', 'image_search']
       },
@@ -20,7 +20,7 @@ class Upload extends Component {
     return (
       <div>
         <Nav />
-        <h3 className="text-center">Upload Your 20-second Video in a Jiffy</h3>
+        <h3 className="text-center">Upload your video to Miniflix</h3>
         <hr/>
 
         <div className="col-sm-12">

@@ -10,7 +10,7 @@ class Display extends Component {
   state = { videos: [] };
 
   getVideos() {
-    axios.get('http://res.cloudinary.com/unicodeveloper/video/list/miniflix.json')
+    axios.get('http://res.cloudinary.com/tomanistor/video/list/miniflix.json')
           .then(res => {
             console.log(res.data.resources);
             this.setState({ videos: res.data.resources});
@@ -28,18 +28,16 @@ class Display extends Component {
     return (
       <div>
         <Nav />
-        <h3 className="text-center">Latest Videos on Miniflix </h3>
+        <h3 className="text-center">Latest Videos on Miniflix</h3>
         <hr/>
 
         <div className="col-sm-12">
-          <CloudinaryContext cloudName="unicodeveloper">
+          <CloudinaryContext cloudName="tomanistor">
             { videos.map((data, index) => (
-                <div className="col-sm-4" key={index}>
+                <div className="col-sm-6" key={index}>
                   <div className="embed-responsive embed-responsive-4by3">
-                    <Video publicId={data.public_id} width="300" height="300" controls></Video>
+                    <Video publicId={data.public_id} width="600" height="600" controls></Video>
                   </div>
-                  <div> Created at {data.created_at} </div>
-
                 </div>
               ))
             }
