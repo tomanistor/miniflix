@@ -1,3 +1,4 @@
+import { Share } from 'react-twitter-widgets'
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import Nav from './Nav';
@@ -38,6 +39,7 @@ class Display extends Component {
                   <div className="embed-responsive embed-responsive-4by3">
                     <Video publicId={data.public_id} width="600" height="600" controls></Video>
                   </div>
+                  <Share url={`http://res.cloudinary.com/unicodeveloper/video/upload/${data.public_id}.mp4`} />
                 </div>
               ))
             }
