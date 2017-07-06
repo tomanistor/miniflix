@@ -6,7 +6,7 @@ const ACCESS_TOKEN_KEY = 'access_token';
 
 const CLIENT_ID = 'W6mDLpp58aDBCRx0npxIljF92wdnbDA5';
 const CLIENT_DOMAIN = 'tomanistor.auth0.com';
-const REDIRECT = 'http://localhost:3000/callback';
+const REDIRECT = 'https://miniflix-react.herokuapp.com/callback'; // Change to http://localhost:3000/callback for dev env
 const SCOPE = 'full:access';
 const AUDIENCE = 'https://tomanistor.auth0.com/userinfo';
 
