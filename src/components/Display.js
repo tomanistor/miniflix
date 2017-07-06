@@ -11,7 +11,7 @@ class Display extends Component {
   state = { videos: [] };
 
   getVideos() {
-    axios.get('http://res.cloudinary.com/tomanistor/video/list/miniflix.json')
+    axios.get('https://res.cloudinary.com/tomanistor/video/list/miniflix.json')
           .then(res => {
             console.log(res.data.resources);
             this.setState({ videos: res.data.resources});
@@ -39,7 +39,7 @@ class Display extends Component {
                   <div className="embed-responsive embed-responsive-4by3">
                     <Video publicId={data.public_id} width="600" height="600" controls></Video>
                   </div>
-                  <Share url={`http://res.cloudinary.com/unicodeveloper/video/upload/${data.public_id}.mp4`} />
+                  <Share url={`https://res.cloudinary.com/unicodeveloper/video/upload/${data.public_id}.mp4`} />
                 </div>
               ))
             }
